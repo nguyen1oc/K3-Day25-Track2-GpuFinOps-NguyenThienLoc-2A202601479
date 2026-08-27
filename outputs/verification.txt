@@ -1,0 +1,47 @@
+Final pre-push verification: 2026-08-27T19:42:54.678612+07:00
+Python: 3.12.8
+
+M1-M5 CLI pipeline
+Completed successfully; output lines: 305
+Exit code: 0
+
+Ex5 standalone CLI
+Completed successfully; output lines: 46
+Exit code: 0
+
+python verify.py
+Generated: price_catalog.csv, gpu_telemetry.csv, token_usage.csv, workloads.csv
+
+============================================================
+  LAB 25 VERIFY
+============================================================
+  [PASS] M1 flags the GPU-Util lie (gpu-h100-4)  (['gpu-h100-4', 'gpu-a10g-1'])
+  [PASS] M1 detects idle waste  ($20.0/day)
+  [PASS] M2 $/1M-token drops after optimization  (6.488 -> 1.126)
+  [PASS] M2 inference savings in 60-95% band  (82.6%)
+  [PASS] M3 recommends a spot tier  ({'reserved', 'spot'})
+  [PASS] M3 recommends a reserved tier  ({'reserved', 'spot'})
+  [PASS] M3 purchasing saves money  (39.1%)
+  [PASS] M4 tag coverage 85-100%  (92%)
+  [PASS] M4 chargeback gate is open  (True)
+  [PASS] M5 total savings in 40-95% band  (46.1%)
+  [PASS] M5 report.md written
+------------------------------------------------------------
+  11/11 checks passed
+============================================================
+
+Exit code: 0
+
+Original instructor tests
+...............                                                          [100%]
+15 passed in 1.27s
+
+Exit code: 0
+
+Full test suite
+......................................                                   [100%]
+38 passed in 3.04s
+
+Exit code: 0
+
+PASS: independent CSV arithmetic for inference, reasoning caps and carbon; English report; student identity; 50 FOCUS rows; four required outputs; removed SUBMISSION.md.
